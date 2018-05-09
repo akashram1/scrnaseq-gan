@@ -1,1 +1,6 @@
-# scrnaseq-gan
+# Generative Adversarial Networks for scRNA-Seq analysis
+
+## Motivation
+For the last decade the cost of next generation sequencing (NGS) has decreased at a rate outpacing Moore’s Law. As such there is an increasing amount of biological data available for large scale genomic studies. However, integration of diverse biological datasets is a notoriously challenging problem primarily due to the sensitivity of NGS platforms to variable  experimental conditions and protocols. Often it is the case that comparisons between datasets from multiple sources is not possible without sophisticated batch correction techniques which are often case-specific, and thus do not generalize well out of the box. Therefore there is a need for frameworks that can effectively integrate diverse datasets with minimal pre-processing, and extract biologically relevant features in the presence of batch effects.
+
+Previous studies have shown that GANs can be used to learn a meaningful latent representation of diverse datasets. Furthermore, the generative nature of these models can capture complex non-linear relationships amongst input variables and provides a flexible framework for post-hoc interpretation and analysis of learned features. Using the Wasserstein GAN we performed dimensionality reduction of an aggregated scRNA-Seq dataset of human pancreatic cells.
